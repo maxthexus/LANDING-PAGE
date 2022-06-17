@@ -1,0 +1,144 @@
+@charset 'UTF-8';
+@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Sarala&display=swap');
+
+:root{
+    --fonte-estilizada: 'Righteous', cursive;
+    --fonte-padrao: 'Sarala', sans-serif;
+    --cor00:#2f2325;
+    --cor01:#835d52;
+    --cor03:#ecd6c4;
+    --cor04:#fff2ef;
+    --cor05:black;
+    --cor06:white;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body{
+    font-size: 100%;
+    background-image: linear-gradient(68.15deg, var(--cor00) 16.62%, var(--cor01)85.61%);
+}
+
+.cabecalho{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 24px;
+}
+
+.img-cabecalho{
+    height: 72px;
+}
+
+.menu-cabecalho{
+    display: flex;    
+    gap: 32px;
+}
+
+.menu-cabecalho-item{
+    color: var(--cor04);
+    font-family: var(--fonte-padrao);
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.conteudo{
+    margin-bottom: 48px;
+    border-top: 0.4px solid var(--cor04);
+}
+
+.cont-principal{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.texto-cont-principal{
+    display: flex;
+    flex-direction: column;
+    gap: 33px;
+
+}
+
+.h1-cont-principal{
+
+    font-family: var(--fonte-estilizada);
+    font-weight: 400;
+    font-size: 64px;
+    color: var(--cor04);
+
+}
+
+.h2-cont-principal{
+    font-family: var(--fonte-padrao);
+    font-weight: 400;
+    font-size: 24px;
+    color: var(--cor03);
+
+}
+
+.botao-cont-principal{
+    background-color: var(--cor03);
+    width: 180px;
+    height: 60px;
+    border: none;
+    box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    font-family: var(--fonte-padrao);
+    font-weight: 400;
+    font-size: 24px;
+    color: var(--cor00);
+
+}
+
+.botao-cont-principal:hover{
+    background-color: rgba(236, 214, 196, 0.5);
+}
+
+
+.img-cont-principal{
+    height: 430px;
+}
+
+.cont-secundario{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    margin-top: 48px;
+}
+
+.h3-cont-secundario{
+    border-top: solid 0.4px var(--cor04);
+    padding-top:48px ;
+    font-family: var(--fonte-estilizada);
+    font-weight: 400;
+    font-size: 24px;
+    color: var(--cor04);
+    margin-bottom: 16px;
+}
+
+.p-cont-secundario{
+    font-family: var(--fonte-padrao);
+    font-weight: 300;
+    font-size: 18px;
+    color: var(--cor04);
+}
+
+.rodape{
+    padding: 32px;
+    border-top: solid 0.4px var(--cor04);
+}
+
+.img-rodape{
+    height: 48px;
+    display: block;
+    margin: 0 auto;
+}
